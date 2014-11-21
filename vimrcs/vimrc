@@ -1,0 +1,41 @@
+source ~/.vim/impl/vimrcs/vundles.vim
+source ~/.vim/impl/vimrcs/basic.vim
+source ~/.vim/impl/vimrcs/extended.vim
+source ~/.vim/impl/vimrcs/settings.vim
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Colors and Fonts
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable syntax highlighting
+syntax enable
+
+" set guifont=Droid\ Sans\ Mono\ 11 linespace=0
+" set guifont=Ubuntu\ Mono\ 12 linespace=3
+set guifont=Liberation\ Mono\ 11 linespace=0
+" set guifont=Monospace\ 10 linespace=0
+set background=dark
+
+" Set extra options when running in GUI mode
+" Remove toolbar, left scrollbar and right scrollbar
+if has("gui_running")
+    colorscheme jellybeans
+    " colorscheme wombat
+    " colorscheme solarized
+    set guioptions-=T
+    set guioptions-=l
+    set guioptions-=L
+    set guioptions-=r
+    set guioptions-=R
+    set t_Co=256
+    set guitablabel=%M\ %t
+else
+    " colorscheme molokai
+    colorscheme jellybeans
+    set t_Co=256
+endif
+
+" Set utf8 as standard encoding and en_US as the standard language
+set encoding=utf8
+
+" Use Unix as the standard file type
+set ffs=unix,dos,mac
