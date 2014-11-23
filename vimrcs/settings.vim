@@ -6,8 +6,26 @@
 """"""""""""""""""""""""""""""
 " => MRU plugin
 """"""""""""""""""""""""""""""
-let MRU_Max_Entries = 50
-map <leader>r :MRU<CR>
+" let MRU_Max_Entries = 50
+" map <leader>r :MRU<CR>
+
+""""""""""""""""""""""""""""""
+" => CTRL-P
+""""""""""""""""""""""""""""""
+let g:ctrlp_working_path_mode = 0
+
+let g:ctrlp_max_height = 20
+let g:ctrlp_custom_ignore = {
+   \ 'dir': 'node_modules\|bower_components|^\.DS_Store\|^\.git\|^\.coffee',
+   \ }
+
+" Invoke CtrlP, but CommandT style
+nnoremap <leader>t :CtrlP<cr>
+nnoremap <leader>. :CtrlPTag<cr>
+nnoremap <leader>b :CtrlPBuffer<cr>
+
+" ack vim default setting
+let g:ack_default_options = " -H --nocolor --nogroup --column"
 
 " nerdcommenter
 let NERDSpaceDelims=1
@@ -15,11 +33,18 @@ let NERDSpaceDelims=1
 let NERDCompactSexyComs=1
 
 " ZenCoding
-let g:user_emmet_expandabbr_key='<C-j>'
+" let g:user_emmet_expandabbr_key='<C-j>'
+let g:user_zen_mode='a'
 
 " powerline
 " let g:Powerline_symbols = 'fancy'
-let g:Powerline_mode_n = 'NORMAL'
+" let g:Powerline_mode_n = 'NORMAL'
+
+" airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline_theme="luna"
 
 " NeoComplCache
 let g:neocomplcache_enable_at_startup=1
@@ -31,10 +56,22 @@ let g:neocomplcache_min_syntax_length = 3
 let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 set completeopt-=preview
 
-imap <C-k> <Plug>(neocomplcache_snippets_force_expand)
-smap <C-k> <Plug>(neocomplcache_snippets_force_expand)
-imap <C-l> <Plug>(neocomplcache_snippets_force_jump)
-smap <C-l> <Plug>(neocomplcache_snippets_force_jump)
+" SuperTab like snippets behavior.
+" imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+" \ "\<Plug>(neosnippet_expand_or_jump)"
+" \: pumvisible() ? "\<C-n>" : "\<TAB>"
+" smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+" \ "\<Plug>(neosnippet_expand_or_jump)"
+" \: "\<TAB>"
+
+" " For snippet_complete marker.
+" if has('conceal')
+  " set conceallevel=2 concealcursor=i
+" endif
+" imap <C-k> <Plug>(neocomplcache_snippets_force_expand)
+" smap <C-k> <Plug>(neocomplcache_snippets_force_expand)
+" imap <C-l> <Plug>(neocomplcache_snippets_force_jump)
+" smap <C-l> <Plug>(neocomplcache_snippets_force_jump)
 
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS

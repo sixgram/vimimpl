@@ -12,9 +12,11 @@ call vundle#rc()
 " Code Completions
 "------------------
 Bundle 'Shougo/neocomplcache'
+" Bundle 'Shougo/neosnippet'
+" Bundle 'Shougo/neosnippet-snippets'
 Bundle 'mattn/emmet-vim'
 Bundle 'Raimondi/delimitMate'
-Bundle 'ervandew/supertab'
+" Bundle 'ervandew/supertab'
 " snippets
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
@@ -44,13 +46,14 @@ Bundle 'nathanaelkane/vim-indent-guides'
 " Bundle 'humiaozuzu/TabBar'
 Bundle 'majutsushi/tagbar'
 Bundle 'mileszs/ack.vim'
-" Bundle 'kien/ctrlp.vim'
+Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-powerline'
+" Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
 Bundle 'scrooloose/syntastic'
 Bundle 'bronson/vim-trailing-whitespace'
 " Bundle 'itchyny/lightline.vim'
-Bundle 'vim-scripts/mru.vim'
+" Bundle 'vim-scripts/mru.vim'
 
 "-------------
 " Other Utils

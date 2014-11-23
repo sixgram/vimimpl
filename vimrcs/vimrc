@@ -11,7 +11,7 @@ syntax enable
 
 " set guifont=Droid\ Sans\ Mono\ 11 linespace=0
 " set guifont=Ubuntu\ Mono\ 12 linespace=3
-set guifont=Liberation\ Mono\ 11 linespace=0
+set guifont=Liberation\ Mono\ 10 linespace=0
 " set guifont=Monospace\ 10 linespace=0
 set background=dark
 
