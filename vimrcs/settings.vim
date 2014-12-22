@@ -44,7 +44,7 @@ let g:user_zen_mode='a'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline_theme="luna"
+" let g:airline_theme="luna"
 
 " NeoComplCache
 let g:neocomplcache_enable_at_startup=1
@@ -84,6 +84,7 @@ if !exists('g:neocomplcache_omni_patterns')
 endif
 let g:neocomplcache_omni_patterns.erlang = '[a-zA-Z]\|:'
 
+let g:EasyMotion_leader_key = '<Leader>'
 " SuperTab
 " let g:SuperTabDefultCompletionType='context'
 let g:SuperTabDefaultCompletionType = '<C-X><C-U>'

@@ -28,7 +28,7 @@ Bundle 'tomtom/tlib_vim'
 " Fast navigation
 "-----------------
 " Bundle 'edsono/vim-matchit'
-" Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Lokaltog/vim-easymotion'
 
 "--------------
 " Fast editing
@@ -54,7 +54,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'bronson/vim-trailing-whitespace'
 " Bundle 'itchyny/lightline.vim'
 " Bundle 'vim-scripts/mru.vim'
-
+" Bundle 'vim-scripts/taglist.vim'
 "-------------
 " Other Utils
 "-------------

@@ -309,8 +309,8 @@ cnoremap w!! w !sudo tee % >/dev/null
 nnoremap <C-w> :redraw!<cr>
 
 " " Jump to matching pairs easily, with Tab
-" nnoremap <Tab> %
-" vnoremap <Tab> %
+nnoremap <Tab> %
+vnoremap <Tab> %
 
 " " Folding
 " nnoremap <Space> za
@@ -320,8 +320,8 @@ nnoremap <C-w> :redraw!<cr>
 nnoremap <leader>W :%s/\s\+$//<CR>:let @/=''<CR>
 
 " grep/Ack/Ag for the word under cursor
-vnoremap <leader>a y:Ack! "\b<c-r>"\b"<cr>:cw<cr>
-nnoremap <leader>a :Ack! "\b<c-r><c-w>\b"
+vnoremap <leader>a y:Ack! "\b<c-r>"\b" <c-r>=expand("%:p:h")<cr>/
+nnoremap <leader>a :Ack! "\b<c-r><c-w>\b" <c-r>=expand("%:p:h")<cr>/
 " nnoremap K *N:Ack! "\b<c-r><c-w>\b"<cr>:cw<cr>
 
 " Allow quick additions to the spelling dict
@@ -396,8 +396,9 @@ map 0 ^
 noremap <leader>y "+y
 noremap <leader>p "+p
 
-iabbr m@@ sixgram@github.com
-iabbr v@@ sixgram@gmail.com
+iabbr duadd /*dugeit by liuke:<cr>--added below codes for<cr>/<cr>/*--start--*/jj
+iabbr durm /*dugeit by liuke:<cr>--removed below codes for<cr>/<cr>/*--start--*/jj
+iabbr duend /*--end--*/
 iabbr ssig --<cr>liu ke<cr>sixgram@gmail
 
 " Quote words under cursor
@@ -527,21 +528,21 @@ function! PulseCursorLine()
     let old_hi = split(old_hi, '\n')[0]
     let old_hi = substitute(old_hi, 'xxx', '', '')
 
-    hi CursorLine guibg=#3a3a3a
-    redraw
-    sleep 20m
+  "   hi CursorLine guibg=#3a3a3a
+    " redraw
+    " sleep 20m
 
-    hi CursorLine guibg=#4a4a4a
-    redraw
-    sleep 30m
+    " hi CursorLine guibg=#4a4a4a
+    " redraw
+    " sleep 30m
 
-    hi CursorLine guibg=#3a3a3a
-    redraw
-    sleep 30m
+    " hi CursorLine guibg=#3a3a3a
+    " redraw
+    " sleep 30m
 
-    hi CursorLine guibg=#2a2a2a
-    redraw
-    sleep 20m
+"     hi CursorLine guibg=#2a2a2a
+    " redraw
+    " sleep 20m
 
     execute 'hi ' . old_hi
 

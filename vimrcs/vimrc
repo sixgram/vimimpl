@@ -1,3 +1,5 @@
+     let g:jellybeans_overrides = {
+    \    'CursorLine': {'guibg': '4a4a4a'}}
 source ~/.vim/impl/vimrcs/vundles.vim
 source ~/.vim/impl/vimrcs/basic.vim
 source ~/.vim/impl/vimrcs/extended.vim
@@ -30,6 +32,7 @@ if has("gui_running")
     set guitablabel=%M\ %t
 else
     " colorscheme molokai
+    " colorscheme wombat
     colorscheme jellybeans
     set t_Co=256
 endif
