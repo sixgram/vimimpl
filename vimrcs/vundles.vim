@@ -15,7 +15,7 @@ Bundle 'Shougo/neocomplcache'
 " Bundle 'Shougo/neosnippet'
 " Bundle 'Shougo/neosnippet-snippets'
 Bundle 'mattn/emmet-vim'
-Bundle 'Raimondi/delimitMate'
+" Bundle 'Raimondi/delimitMate'
 " Bundle 'ervandew/supertab'
 " snippets
 Bundle 'garbas/vim-snipmate'
