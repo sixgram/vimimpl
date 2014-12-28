@@ -420,12 +420,12 @@ nnoremap <leader>sl :execute "rightbelow vsplit" bufname('#')<cr>
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set guifont=Anonymous\ for\ Powerline:h12 linespace=2
-" set guifont=Droid\ Sans\ Mono\ 10 linespace=0
+set guifont=Droid\ Sans\ Mono\ 10 linespace=0
 " set guifont=Mensch\ for\ Powerline\ 10 linespace=0
 " set guifont=saxMono:h14 linespace=3
 " set guifont=Ubuntu\ Mono\ 10 linespace=3
 " set guifont=Source\ Code\ Pro\ Light\ 10 linespace=0
-set guifont=Monospace\ 11 linespace=0
+" set guifont=Monospace\ 11 linespace=0
 set background=dark
 
 " Set extra options when running in GUI mode
@@ -442,7 +442,7 @@ if has("gui_running")
     set t_Co=256
     set guitablabel=%M\ %t
 else
-    colorscheme molokai
+    " colorscheme molokai
     "colorscheme railscat
     "colorscheme molokai_deep
     "colorscheme wombat256
@@ -450,7 +450,7 @@ else
     "colorscheme mustang_silent
     "colorscheme badwolf
     set t_Co=256
-    "colorscheme jellybeans
+    colorscheme jellybeans
 endif
 
 
