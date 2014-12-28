@@ -1,5 +1,5 @@
-     let g:jellybeans_overrides = {
-    \    'CursorLine': {'guibg': '005F5C'}}
+     " let g:jellybeans_overrides = {
+    " \    'CursorLine': {'guibg': '005F5C'}}
 
 source ~/.vim/impl/vimrcs/vundles.vim
 source ~/.vim/impl/vimrcs/basic.vim
