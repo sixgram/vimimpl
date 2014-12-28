@@ -1,5 +1,5 @@
-     " let g:jellybeans_overrides = {
-    " \    'CursorLine': {'guibg': '005F5C'}}
+     let g:jellybeans_overrides = {
+    \    'CursorLine': {'guibg': '005F5C'}}
 
 source ~/.vim/impl/vimrcs/vundles.vim
 source ~/.vim/impl/vimrcs/basic.vim
@@ -33,16 +33,16 @@ if has("gui_running")
 else
     set t_Co=256
     " colorscheme solarized
-    colorscheme molokai
+    " colorscheme molokai
     " colorscheme wombat
-    " colorscheme jellybeans
+    colorscheme jellybeans
 
 endif
 " let g:zenburn_high_Contrast = 1
 " let g:liquidcarbon_high_contrast = 1
 " let g:molokai_original = 0
-hi Normal       ctermfg=252 ctermbg=0
-hi CursorLine               ctermbg=17   cterm=none
+" hi Normal       ctermfg=252 ctermbg=0
+" hi CursorLine               ctermbg=17   cterm=none
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 " Use Unix as the standard file type
