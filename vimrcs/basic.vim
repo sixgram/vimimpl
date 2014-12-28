@@ -320,8 +320,8 @@ nnoremap <C-w> :redraw!<cr>
 nnoremap <leader>W :%s/\s\+$//<CR>:let @/=''<CR>
 
 " grep/Ack/Ag for the word under cursor
-vnoremap <leader>a y:Ack! "\b<c-r>"\b"<cr>:cw<cr>
-nnoremap <leader>a :Ack! "\b<c-r><c-w>\b"
+vnoremap <leader>a y:Ack! "\b<c-r>"\b" <c-r>=expand("%:p:h")<cr>/
+nnoremap <leader>a :Ack! "\b<c-r><c-w>\b" <c-r>=expand("%:p:h")<cr>/
 " nnoremap K *N:Ack! "\b<c-r><c-w>\b"<cr>:cw<cr>
 
 " Allow quick additions to the spelling dict
@@ -527,21 +527,21 @@ function! PulseCursorLine()
     let old_hi = split(old_hi, '\n')[0]
     let old_hi = substitute(old_hi, 'xxx', '', '')
 
-    hi CursorLine guibg=#3a3a3a
-    redraw
-    sleep 20m
+ "    hi CursorLine guibg=#3a3a3a
+    " redraw
+    " sleep 20m
 
-    hi CursorLine guibg=#4a4a4a
-    redraw
-    sleep 30m
+"     hi CursorLine guibg=#4a4a4a
+    " redraw
+    " sleep 30m
 
-    hi CursorLine guibg=#3a3a3a
-    redraw
-    sleep 30m
+    " hi CursorLine guibg=#3a3a3a
+    " redraw
+    " sleep 30m
 
-    hi CursorLine guibg=#2a2a2a
-    redraw
-    sleep 20m
+    " hi CursorLine guibg=#2a2a2a
+    " redraw
+    " sleep 20m
 
     execute 'hi ' . old_hi
 
