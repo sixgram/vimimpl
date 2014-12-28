@@ -86,12 +86,14 @@ let g:neocomplcache_omni_patterns.erlang = '[a-zA-Z]\|:'
 
 let g:EasyMotion_leader_key = '<Leader>'
 " SuperTab
-" let g:SuperTabDefultCompletionType='context'
+let g:SuperTabDefultCompletionType='context'
 let g:SuperTabDefaultCompletionType = '<C-X><C-U>'
 let g:SuperTabRetainCompletionType=2
 
 " lightline settings
 
+let g:syntastic_enable_highlighting = 0
+let g:syntastic_cursor_column = 0
 " Rainbow parentheses for Lisp and variants
 let g:rbpt_colorpairs = [
     \ ['brown',       'RoyalBlue3'],

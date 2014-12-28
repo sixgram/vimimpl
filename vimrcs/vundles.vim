@@ -16,12 +16,12 @@ Bundle 'Shougo/neocomplcache'
 " Bundle 'Shougo/neosnippet-snippets'
 Bundle 'mattn/emmet-vim'
 Bundle 'Raimondi/delimitMate'
-" Bundle 'ervandew/supertab'
+Bundle 'ervandew/supertab'
 
 " snippets
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
-"------ snipmate dependencies -------
+" ------ snipmate dependencies -------
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 
