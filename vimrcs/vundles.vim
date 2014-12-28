@@ -17,6 +17,7 @@ Bundle 'Shougo/neocomplcache'
 Bundle 'mattn/emmet-vim'
 Bundle 'Raimondi/delimitMate'
 " Bundle 'ervandew/supertab'
+
 " snippets
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
@@ -28,7 +29,7 @@ Bundle 'tomtom/tlib_vim'
 " Fast navigation
 "-----------------
 " Bundle 'edsono/vim-matchit'
-" Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Lokaltog/vim-easymotion'
 
 "--------------
 " Fast editing
@@ -54,7 +55,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'bronson/vim-trailing-whitespace'
 " Bundle 'itchyny/lightline.vim'
 " Bundle 'vim-scripts/mru.vim'
-
+" Bundle 'vim-scripts/taglist.vim'
 "-------------
 " Other Utils
 "-------------

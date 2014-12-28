@@ -84,6 +84,7 @@ if !exists('g:neocomplcache_omni_patterns')
 endif
 let g:neocomplcache_omni_patterns.erlang = '[a-zA-Z]\|:'
 
+let g:EasyMotion_leader_key = '<Leader>'
 " SuperTab
 " let g:SuperTabDefultCompletionType='context'
 let g:SuperTabDefaultCompletionType = '<C-X><C-U>'

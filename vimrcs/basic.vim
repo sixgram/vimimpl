@@ -309,8 +309,8 @@ cnoremap w!! w !sudo tee % >/dev/null
 nnoremap <C-w> :redraw!<cr>
 
 " " Jump to matching pairs easily, with Tab
-" nnoremap <Tab> %
-" vnoremap <Tab> %
+nnoremap <Tab> %
+vnoremap <Tab> %
 
 " " Folding
 " nnoremap <Space> za
@@ -396,8 +396,9 @@ map 0 ^
 noremap <leader>y "+y
 noremap <leader>p "+p
 
-iabbr m@@ sixgram@github.com
-iabbr v@@ sixgram@gmail.com
+iabbr duadd /*dugeit by liuke:<cr>--added below codes for<cr>/<cr>/*--start--*/jj
+iabbr durm /*dugeit by liuke:<cr>--removed below codes for<cr>/<cr>/*--start--*/jj
+iabbr duend /*--end--*/
 iabbr ssig --<cr>liu ke<cr>sixgram@gmail
 
 " Quote words under cursor
@@ -419,12 +420,12 @@ nnoremap <leader>sl :execute "rightbelow vsplit" bufname('#')<cr>
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set guifont=Anonymous\ for\ Powerline:h12 linespace=2
-" set guifont=Droid\ Sans\ Mono\ 10 linespace=0
+set guifont=Droid\ Sans\ Mono\ 10 linespace=0
 " set guifont=Mensch\ for\ Powerline\ 10 linespace=0
 " set guifont=saxMono:h14 linespace=3
 " set guifont=Ubuntu\ Mono\ 10 linespace=3
 " set guifont=Source\ Code\ Pro\ Light\ 10 linespace=0
-set guifont=Monospace\ 11 linespace=0
+" set guifont=Monospace\ 11 linespace=0
 set background=dark
 
 " Set extra options when running in GUI mode
@@ -441,7 +442,7 @@ if has("gui_running")
     set t_Co=256
     set guitablabel=%M\ %t
 else
-    colorscheme molokai
+    " colorscheme molokai
     "colorscheme railscat
     "colorscheme molokai_deep
     "colorscheme wombat256
@@ -449,7 +450,7 @@ else
     "colorscheme mustang_silent
     "colorscheme badwolf
     set t_Co=256
-    "colorscheme jellybeans
+    colorscheme jellybeans
 endif
 
 
@@ -526,22 +527,6 @@ function! PulseCursorLine()
     redir END
     let old_hi = split(old_hi, '\n')[0]
     let old_hi = substitute(old_hi, 'xxx', '', '')
-
- "    hi CursorLine guibg=#3a3a3a
-    " redraw
-    " sleep 20m
-
-"     hi CursorLine guibg=#4a4a4a
-    " redraw
-    " sleep 30m
-
-    " hi CursorLine guibg=#3a3a3a
-    " redraw
-    " sleep 30m
-
-    " hi CursorLine guibg=#2a2a2a
-    " redraw
-    " sleep 20m
 
     execute 'hi ' . old_hi
 
