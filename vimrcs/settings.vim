@@ -21,8 +21,9 @@ let g:ctrlp_custom_ignore = {
 
 " Invoke CtrlP, but CommandT style
 nnoremap <leader>t :CtrlP<cr>
-nnoremap <leader>. :CtrlPTag<cr>
-nnoremap <leader>b :CtrlPBuffer<cr>
+" nnoremap <leader>. :CtrlPTag<cr>
+" nnoremap <leader>b :CtrlPBuffer<cr>
+nnoremap <leader>. :CtrlPBuffer<cr>
 
 " ack vim default setting
 let g:ack_default_options = " -H --nocolor --nogroup --column"
